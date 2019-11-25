@@ -80,7 +80,8 @@ const Story = props => {
           <a href={story.url} style={{ textDecoration: "none" }}>
             {flipTitle(story.title)}
           </a>
-          <h5 style={{ margin: "5px 0px 20px 0px", textAlign: "left" }}>
+          <h5 style={{ color: "gray", margin: 0, textAlign: "left"}}>{story.url}</h5>
+          <h5 style={{ margin: "10px 0px 20px 0px", textAlign: "left" }}>
             {new Date(story.time * 1000).toLocaleDateString()} -{" "}
             {new Date(story.time * 1000).toTimeString()}
           </h5>

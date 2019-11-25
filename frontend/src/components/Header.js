@@ -13,7 +13,7 @@ const Header = () => {
     const classes = useStyles();
     return (
         <div className={classes.logo}>
-        <h1 className="logo">HackerNews</h1>
+        <a href="/" style={{textDecoration: 'none'}}><h1 className="logo">HackerNews</h1></a>
         </div>
     )
 }
